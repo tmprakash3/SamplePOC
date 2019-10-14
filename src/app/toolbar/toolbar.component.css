@@ -1,0 +1,17 @@
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+  a[mat-button] {
+      color: #fff;
+      margin-right: 8px;
+      font-size: 13px;
+      text-decoration: none;
+  }
+  a[mat-button]:hover {
+      text-decoration: underline;
+  }
+  a[mat-button]:last-child {
+      margin-right: 0px;
+  }

@@ -1,0 +1,12 @@
+table tr td {
+    border: 1px solid #d4d6d8;
+}
+table {
+    border-collapse: collapse;
+}
+a{
+    color: #fff !important;
+}
+a.mat-list-item {
+    color: #999 !important;
+}
