@@ -10,7 +10,11 @@ import { Customer } from './app.model';
 export class AppComponent {
   title = 'my-dream-app';
 
+  constructor() {}
 
+  toggle = function() {
+
+  }
 
   
   
