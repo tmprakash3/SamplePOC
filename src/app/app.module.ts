@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
 import { AccountComponent } from './account/account.component';
@@ -21,7 +23,7 @@ import { DetailComponent } from './account/detail/detail.component';
     ToolbarComponent,
     AccountComponent,
     CreateComponent,
-    DetailComponent
+    DetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { DetailComponent } from './account/detail/detail.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,7 +8,7 @@ import { Routes, RouterModule } from '@angular/router';
 })
 export class ToolbarComponent implements OnInit {
 
-
+  title= "Online Store Project";
   constructor() { }
 
   ngOnInit() {

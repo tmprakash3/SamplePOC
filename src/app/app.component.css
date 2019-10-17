@@ -4,9 +4,13 @@ table tr td {
 table {
     border-collapse: collapse;
 }
-a{
+div a{
     color: #fff !important;
 }
 a.mat-list-item {
-    color: #999 !important;
+    color: #999;
+}
+.active {
+    background-color: #7DC142;
+    color: white !important;
 }

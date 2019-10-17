@@ -6,19 +6,14 @@ import {CreateComponent} from './account/create/create.component';
 import {DetailComponent} from './account/detail/detail.component';
 
 const Routes = [
-  // { path: '**', component: AppComponent},
+  { path: '', redirectTo: 'products', pathMatch: 'full'},
   {
-    path: 'accounts', component: AccountComponent,
+    path: 'products', component: AccountComponent, 
     children: [
-      {
-          path: 'create-account',
-          component: CreateComponent
-      },
-      {
-          path: 'detail',
-          component: DetailComponent
-      }
-  ] }
+      { path: 'create-account',component: CreateComponent },
+      { path: 'detail', component: DetailComponent }
+    ] 
+  }
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 
 @Component({
@@ -8,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountComponent implements OnInit {
 
-  constructor() { }
+  products = [];
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+
+    this.dataService.sendGetRequest().subscribe((data: any[])=>{
+      console.log("fetching products");
+      this.products = data;
+      console.log(data);
+    })
+
   }
+
+
 
 }
