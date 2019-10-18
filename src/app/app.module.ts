@@ -8,9 +8,10 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { TruncatePipe } from './truncate.pipe';
 
-
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
+import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatCardModule, MatProgressSpinnerModule } from  '@angular/material';
 import { AccountComponent } from './account/account.component';
 import { CreateComponent } from './account/create/create.component';
 import { DetailComponent } from './account/detail/detail.component';
@@ -24,6 +25,7 @@ import { DetailComponent } from './account/detail/detail.component';
     AccountComponent,
     CreateComponent,
     DetailComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,10 @@ import { DetailComponent } from './account/detail/detail.component';
     MatListModule,
     MatButtonModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
