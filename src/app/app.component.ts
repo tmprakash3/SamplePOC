@@ -12,10 +12,6 @@ export class AppComponent {
 
   constructor() {}
 
-  toggle = function() {
-
-  }
-
   
   
 }

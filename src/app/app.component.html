@@ -9,9 +9,9 @@
     
           <a mat-list-item routerLink="/" routerLinkActive="active"> Products </a>
           <!-- <a mat-list-item routerLink ="products/create-account" routerLinkActive="active"> Create Account </a> -->
-          <a mat-list-item routerLink ="products/detail" routerLinkActive="active"> Details </a>
+          <a mat-list-item routerLink ="products/details" routerLinkActive="active"> Details </a>
           <a mat-list-item routerLink ="'/create-contact'" routerLinkActive="active"> Create Contact </a>
-          <a mat-list-item routerLink ="'/activities'" routerLinkActive="active"> Activities </a>
+          <a mat-list-item routerLink ="/login" routerLinkActive="active"> Login </a>
           <a mat-list-item routerLink ="'/create-activity'" routerLinkActive="active"> Create Activity </a>
           <!-- <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a> -->
     
@@ -19,7 +19,6 @@
       </mat-sidenav>
       <mat-sidenav-content>
         <div style="height: 88vh;">
-          
           <router-outlet></router-outlet>
         </div>
       </mat-sidenav-content>
